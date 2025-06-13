@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        input{
+            font-size: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <select onchange="mudou()"  id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+
+    </select>
+
+    <div id="texto" onmousemove="addText()" onmouseover="passarEncima()" onmouseout="corAzul()"></div>
+    <button  onclick="botaoClicar()" ondblclick="clickDuplo()">CLICK</button>
+    <p id="texto"></p>
+
+    <input onfocus="campoCheio()" id="campoTexto" value="Campo cheio" type="text">
+
+    <script src="objecto.js"></script>
+    //dasda
+</body>
+</html>
